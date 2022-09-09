@@ -9,6 +9,8 @@ nav {
     position: sticky;
     top: 0;
     background-color: white;
+    box-shadow: 0 5px 10px lightblue;
+    margin-bottom: 30px;
 }
 .navBar {
     display: flex;
@@ -56,24 +58,44 @@ section#about .intro h4 {
 section#about .intro p {
     padding: 10px 0;
 }
+section#about .intro a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+section#about .intro a:hover {
+    background-color: blue;
+}
 section#about .img-intro img {
     border-radius: 50%;
-    box-shadow: 0 5px 20px grey;
+    box-shadow: 0 0 10px darkcyan;
 }
-section#portfolio {
-    width: 80%;
-    margin: auto;
-}
+
 .card {
-    box-shadow: 0 0 20px grey;
+    background-color: white;
+    border: 1px solid darkcyan;
     border-radius: 20px;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
-    width: 180px;    
+    width: 180px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 0 0 20px blue;
+    transform: translateY(10px);
 }
 .card img {
     width: 120px;
+    margin: auto;
 }
 .card h3 {
     border-bottom: 1px solid darkcyan;
