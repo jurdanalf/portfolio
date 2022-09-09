@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'calibri';
+    color: darkcyan;
+    scroll-behavior: smooth;
+}
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+.navBrand h2 {
+    cursor: pointer;
+}
+nav .navList ul {
+    display: flex;
+    list-style: none;
+}
+nav .navList ul li {
+    padding: 20px;
+}
+nav .navList ul li a {
+    text-decoration: none;
+}
+nav .navList ul li a:hover {
+    padding: 20px 0;
+    border-bottom: 3px solid darkcyan;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+section {
+    padding: 20px 0;
+    width: 80%;
+    margin: auto;
+}
+section#about {
+    display: flex;
+    align-items: center;
+}
+section#about .intro h4 {
+    border-bottom: 2px solid darkcyan;
+    padding: 5px 0;
+    width: 150px;
+}
+section#about .intro p {
+    padding: 10px 0;
+}
+section#about .img-intro img {
+    border-radius: 50%;
+    box-shadow: 0 5px 20px grey;
+}
+section#portfolio {
+    width: 80%;
+    margin: auto;
+}
+.card {
+    box-shadow: 0 0 20px grey;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 180px;    
+}
+.card img {
+    width: 120px;
+}
+.card h3 {
+    border-bottom: 1px solid darkcyan;
+    width: 140px;
+    margin: 10px auto;
+    padding-bottom: 5px;
+}
+.card p {
+    font-size: 14px;
+}
+.upside-row {
+    display: flex;
+    justify-content: center;
+}
+.downside-row {
+    display: flex;
+    justify-content: center;
+}
+.scroll-up a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    margin: auto;
+}
+.scroll-down a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    margin: auto;
+}
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: darkcyan;
+}
+footer h4 {
+    color: white;
+}
