@@ -6,8 +6,8 @@
     scroll-behavior: smooth;
 }
 nav {
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     background-color: white;
     box-shadow: 0 5px 10px lightblue;
     margin-bottom: 30px;
@@ -46,35 +46,35 @@ section {
     width: 80%;
     margin: auto;
 }
-section#about {
+section#about .about {
     display: flex;
     align-items: center;
 }
-section#about .intro h4 {
+section#about .about .intro h4 {
     border-bottom: 2px solid darkcyan;
     padding: 5px 0;
     width: 150px;
 }
-section#about .intro p {
+section#about .about .intro p {
     padding: 10px 0;
 }
-section#about .intro a {
+section#about .about .intro a {
     text-decoration: none;
     display: inline-block;
-    background-color: darkcyan;
-    color: white;
     padding: 10px 20px;
+    border: 1px solid darkcyan;
     border-radius: 20px;
     transition: 0.3s;
+    margin: 10px 0;
 }
-section#about .intro a:hover {
-    background-color: blue;
+section#about .about .intro a:hover {
+    background-color: darkcyan;
+    color: white;
 }
-section#about .img-intro img {
+section#about .about .img-intro img {
     border-radius: 50%;
     box-shadow: 0 0 10px darkcyan;
 }
-
 .card {
     background-color: white;
     border: 1px solid darkcyan;
@@ -114,7 +114,7 @@ section#about .img-intro img {
     display: flex;
     justify-content: center;
 }
-.scroll-up a {
+.scroll-up a, .scroll-down a {
     text-decoration: none;
     display: inline-block;
     background-color: darkcyan;
@@ -127,17 +127,20 @@ section#about .img-intro img {
     margin: auto;
 }
 .scroll-down a {
-    text-decoration: none;
-    display: inline-block;
-    background-color: darkcyan;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 50px;
-    right: 20px;
-    margin: auto;
+    bottom: 50px !important;
 }
+#whatsapp, #email, #instagram, #twitter {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.contact h4 {
+    padding: 0 10px;
+}
+.contact img {
+    width: 24px;
+}
+
 footer {
     padding: 10px;
     text-align: center;
