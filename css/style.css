@@ -49,6 +49,7 @@ section {
 section#about .about {
     display: flex;
     align-items: center;
+    box-sizing: border-box;
 }
 section#about .about .intro h4 {
     border-bottom: 2px solid darkcyan;
@@ -56,7 +57,7 @@ section#about .about .intro h4 {
     width: 150px;
 }
 section#about .about .intro p {
-    padding: 10px 0;
+    padding: 10px 40px 10px 0;
 }
 section#about .about .intro a {
     text-decoration: none;
@@ -74,6 +75,7 @@ section#about .about .intro a:hover {
 section#about .about .img-intro img {
     border-radius: 50%;
     box-shadow: 0 0 10px darkcyan;
+    margin: 0 20px;
 }
 .card {
     background-color: white;
@@ -90,8 +92,8 @@ section#about .about .img-intro img {
     transition: 0.3s;
 }
 .card:hover {
-    box-shadow: 0 0 20px blue;
-    transform: translateY(10px);
+    transform: rotate(10deg);
+    box-shadow: 0 0 10px blue;
 }
 .card img {
     width: 120px;
@@ -140,7 +142,15 @@ section#about .about .img-intro img {
 .contact img {
     width: 24px;
 }
-
+#contact {
+    display: flex;
+    width: 60%;
+    gap: 20px;
+}
+#contact .address iframe {
+    border-radius: 10px;
+    padding: 20px 0;
+}
 footer {
     padding: 10px;
     text-align: center;
