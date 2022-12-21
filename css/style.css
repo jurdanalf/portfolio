@@ -96,7 +96,7 @@ section#about .about .img-intro img {
     box-shadow: 0 0 10px blue;
 }
 .card img {
-    width: 120px;
+    width: 100%;
     margin: auto;
 }
 .card h3 {
